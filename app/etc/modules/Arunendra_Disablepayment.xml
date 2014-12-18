@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+<modules>
+    <Arunendra_Disablepayment>
+        <active>true</active>
+        <codePool>local</codePool>
+    </Arunendra_Disablepayment>
+</modules>
+</config>

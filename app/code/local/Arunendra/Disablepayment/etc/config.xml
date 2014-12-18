@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Arunendra_Disablepayment>
+            <version>1.0.1</version>
+        </Arunendra_Disablepayment>
+    </modules>
+    <global>
+        <models>
+            <disablepayment>
+            <class>Arunendra_Disablepayment_Model</class>
+            </disablepayment>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <payment_method_is_active>
+                <observers>
+                    <paymentfilter_payment_method_is_active>
+                        <type>singleton</type>
+                        <class>disablepayment/observer</class>
+                        <method>filterpaymentmethod</method>
+                    </paymentfilter_payment_method_is_active>
+                </observers>
+            </payment_method_is_active>
+        </events>
+    </frontend>
+</config>
